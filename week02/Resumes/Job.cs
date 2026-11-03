@@ -2,15 +2,15 @@ using System;
 
 public class Job
 {
-    public string _name;
+    // Variables for the Job class
     public string _jobTitle;
     public string _company;
-    public string _startDate;
-    public string _endDate;
-    public string _jobDescription;
+    public string _startYear;
+    public string _endYear;
 
+    // Display job details in the specified format
     public void Display()
     {
-        Console.WriteLine($"{_name}: {_jobTitle} ({_company}) {_startDate}-{_endDate}");
+        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
     }
 }
