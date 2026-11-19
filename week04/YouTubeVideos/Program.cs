@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-// Viewer's comment and formats it for display.
+// Represents a viewer's comment and formats it for display.
 class Comment
 {
     public string CommenterName { get; set; }
@@ -82,7 +82,7 @@ class Comment
     }
 }
 
-//Topic for a video.
+// Represents a topic tag associated with a video.
 class Tag
 {
     public string Name { get; }
@@ -93,7 +93,7 @@ class Tag
     }
 }
 
-//Video details and the comments associated with the video.
+// Represents video details, tags, and associated comments.
 class Video
 {
     public string Title { get; set; }
@@ -175,7 +175,6 @@ class Video
 
     public void DisplayDetails()
     {
-        // Printing the video information followed by each viewer comment.
         Console.WriteLine($"Title: {Title}");
         Console.WriteLine($"Author: {Author}");
         Console.WriteLine($"Length: {LengthInSeconds} seconds");
@@ -197,7 +196,7 @@ class Program
 {
     static void Main()
     {
-        // Create sample videos and add three comments to each one.
+        // Create sample videos and add at least three comments to each one.
         List<Video> videos = new List<Video>();
 
         Video v1 = new Video("The Africa Awakening", "PLO Lumumba", 710);

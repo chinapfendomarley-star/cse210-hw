@@ -361,20 +361,22 @@ class Program
         Promotion orderPromotion = new Promotion("SAVE10", DiscountType.Percentage, 10m);
         Order order2 = new Order(customer2, products2, orderPromotion);
 
-        // Orders imported from the first three entries in Giftlist.mdb.
+        // Orders imported from the first three entries in Giftlist.mdb (each with 2+ products).
         Address address3 = new Address("1280 Oakridge Drive", "Austin", "TX 78701", "USA");
         Customer customer3 = new Customer("Antoinette Goodchild", address3);
         List<Product> products3 = new List<Product>
         {
-            new Product("Lamp", "GIFT-001", 29.99m, 1, 10, 2)
+            new Product("Lamp", "GIFT-001", 29.99m, 1, 10, 2),
+            new Product("Desk Shade", "GIFT-004", 14.50m, 1, 8, 2)
         };
         Order order3 = new Order(customer3, products3);
 
-        Address address4 = new Address("459 Evergreen Terrace", "Springfied", "IL 23451", "USA");
+        Address address4 = new Address("459 Evergreen Terrace", "Springfield", "IL 23451", "USA");
         Customer customer4 = new Customer("Elenor Rastova", address4);
         List<Product> products4 = new List<Product>
         {
-            new Product("Frame Print", "GIFT-002", 19.99m, 1, 10, 2)
+            new Product("Frame Print", "GIFT-002", 19.99m, 1, 10, 2),
+            new Product("Matte Board", "GIFT-005", 9.99m, 1, 8, 2)
         };
         Order order4 = new Order(customer4, products4);
 
@@ -382,7 +384,8 @@ class Program
         Customer customer5 = new Customer("Talent Svongwa", address5);
         List<Product> products5 = new List<Product>
         {
-            new Product("Laptop", "GIFT-003", 899.99m, 1, 10, 2)
+            new Product("Laptop", "GIFT-003", 899.99m, 1, 10, 2),
+            new Product("Laptop Sleeve", "GIFT-006", 24.99m, 1, 12, 2)
         };
         Order order5 = new Order(customer5, products5);
 
