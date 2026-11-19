@@ -1,0 +1,5 @@
+enum DiscountType
+{
+    Percentage,
+    FixedAmount
+}
